@@ -41,12 +41,12 @@ Now you **MUST** make a `kbd.cfg` file. It executes `dvorak` or `qwerty`: it dep
 ### Launch Options
 **Windows**:
 ```
--novid -softparticlesdefaultoff -reuse -nohltv -console -nostartupsound -threads 7
+-novid -softparticlesdefaultoff -reuse -nohltv -console -nostartupsound
 ```
 
 **Linux**: (note: have you `systemctl --user enable`d and `start`ed the `gamemode` service?)
 ```
-gamemoderun %command% -novid -softparticlesdefaultoff -reuse -nohltv -console -nostartupsound -NoQueuedPacketThread -threads 7 -freq 164 -gl_enablesamplerobjects -gl_texclientstorage
+gamemoderun %command% -novid -softparticlesdefaultoff -reuse -nohltv -console -nostartupsound -NoQueuedPacketThread -freq 165 -gl_enablesamplerobjects -gl_texclientstorage
 ```
 
 ## Disclaimer
