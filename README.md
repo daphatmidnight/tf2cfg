@@ -1,6 +1,6 @@
 # unitgon's TF2 configs
 
-Settings for a beefy desktop. Settings for someone who likes to use a fuckton of buttons on the keeb and mouse. Settings for unitgon. Because why not.
+Very personal settings for a beefy desktop. Settings for someone who likes to use a load of buttons on the keeb and mouse. Settings for unitgon. Because why not.
 
 ## Dependancies
 
@@ -9,7 +9,7 @@ Settings for a beefy desktop. Settings for someone who likes to use a fuckton of
   just chuck the following files into `tf/custom/`:
   * `mastercomfig-xxxxx-preset.vpk`
   * `mastercomfig-no-tutorial-addon.vpk`
-  * `mastercomfig-mouse-tweaks-addon.vpk`
+  * `mastercomfig-flat-mouse-addon.vpk`
 * **Linux only**: `gamemode`, `lib32-gamemode`, `cpupower` and `irqbalance`
 * (Highly recommended) A custom HUD such as [yayahud](https://github.com/Yttrium-tYcLief/yayahud)
 * `git` of course
@@ -32,10 +32,10 @@ git clone git@github.com:unitgon/tf2cfg.git cfg
 Now you **MUST** make a `kbd.cfg` file. It executes `dvorak` or `qwerty`: it depends on your operating system for key detection in TF2.
 
 ```js
-// Uncomment one of the following lines
+// Only use one of the following lines
 
-// exec dvorak // For Windows if you use dvorak
-// exec qwerty // Probably all other cases
+exec dvorak // For Windows if you use dvorak
+exec qwerty // Probably all other cases
 ```
 
 ### Launch Options
@@ -46,7 +46,7 @@ Now you **MUST** make a `kbd.cfg` file. It executes `dvorak` or `qwerty`: it dep
 
 **Linux**: (note: have you `systemctl --user enable`d and `start`ed the `gamemode` service?)
 ```
-gamemoderun %command% -novid -softparticlesdefaultoff -reuse -nohltv -console -nostartupsound -NoQueuedPacketThread -freq 165 -gl_enablesamplerobjects -gl_texclientstorage
+gamemoderun %command% -novid -softparticlesdefaultoff -reuse -nohltv -console -nostartupsound -NoQueuedPacketThread
 ```
 
 ## Disclaimer
